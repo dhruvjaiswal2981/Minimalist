@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefly</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <img src="https://i.postimg.cc/9QBKhjhj/raju-rassibomb.jpg" alt="Hero Image">
+            <div class="hero-text">
+                <h1>The choice is yours.<br>Because they don’t have one.</h1>
+                <button onclick="openPopup('popup1')">Quick View</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About</h2>
+        <p>Our products are crafted exclusively from the dreams and screams of young kids who wanted to show their mastery in their chosen fields, but were directed towards a factory for daily wages. Each cracker bursts brighter than their lost smiles, and can be heard louder than their cries for miles. Buy them, burst them, brag about them.<br><br>The choice is yours. Because they don’t have one.</p>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://i.postimg.cc/9QBKhjhj/raju-rassibomb.jpg" alt="Raju Rassibomb">
+                <h3>Raju Rassibomb</h3>
+                <button onclick="openPopup('popup1')">Quick View</button>
+            </div>
+            <div class="product">
+                <img src="https://i.postimg.cc/9QBKhjhj/raju-rassibomb.jpg" alt="Ladiyon ki Rani Chani">
+                <h3>Ladiyon ki Rani Chani</h3>
+                <button onclick="openPopup('popup2')">Quick View</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZF2luh1FKz7el4OV6Gy427eqKCAxsSEARw&usqp=CAU" alt="Facebook" width="24" height="24"></a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBxBORb93xw87z5dzsrU5rML1M--Dri9Q7ig&usqp=CAU" alt="Instagram" width="24" height="24"></a>
+            <a href="#"><img src="data:image/png;base64,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" alt="Twitter" width="24" height="24"></a>
+            <a href="#"><img src="data:image/png;base64,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" alt="LinkedIn" width="24" height="24"></a>
+        </div>
+    </footer>
+
+    <!-- Popup Structure -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <div class="popup-image">
+                <img src="https://i.postimg.cc/9QBKhjhj/raju-rassibomb.jpg" alt="Raju Rassibomb">
+            </div>
+            <div class="popup-details">
+                <h3>Raju Rassibomb</h3>
+                <p>MRP: <strong>Raju’s Dreams/-</strong></p>
+                <p><strong>Product Description:</strong> This product packs an extra punch, thanks to the literal blood, sweat and tears of a young boy.</p>
+                <p><strong>Product Contents:</strong></p>
+                <ul>
+                    <li>10 hand-hurting pieces of rassi bombs</li>
+                    <li>Filled with great pain</li>
+                    <li>Raju's hopes</li>
+                </ul>
+                <p><strong>Shipping Time:</strong> Before Raju understands that his dreams do not matter.</p>
+                <button class="choose-btn">Choose Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <div class="popup-image">
+                <img src="https://i.postimg.cc/9QBKhjhj/raju-rassibomb.jpg" alt="Ladiyon ki Rani Chani">
+            </div>
+            <div class="popup-details">
+                <h3>Ladiyon ki Rani Chani</h3>
+                <p>MRP: <strong>Rani’s Dreams/-</strong></p>
+                <p><strong>Product Description:</strong> This product brings the brightest light, at the cost of dreams.</p>
+                <p><strong>Product Contents:</strong></p>
+                <ul>
+                    <li>10 hand-hurting pieces of rani chani</li>
+                    <li>Filled with great pain</li>
+                    <li>Rani's hopes</li>
+                </ul>
+                <p><strong>Shipping Time:</strong> Before Rani understands that her dreams do not matter.</p>
+                <button class="choose-btn">Choose Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
